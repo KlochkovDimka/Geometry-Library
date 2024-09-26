@@ -2,22 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Geometry-Library</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.1.0</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>Geometry-Library</artifactId>
-    <packaging>pom</packaging>
-    <version>1.1.0</version>
-
-    <modules>
-        <module>GeometryUtils</module>
-        <module>ThreeDimensionalShapes</module>
-    </modules>
+    <artifactId>ThreeDimensionalShapes</artifactId>
+    <version>1.0.0-SNAPESHOT</version>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>Geometry-Library</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+    </dependencies>
 </project>
