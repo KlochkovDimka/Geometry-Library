@@ -2,7 +2,7 @@ package org.example;
 
 import org.example.figure.Figure;
 
-public class Sphere extends Figure {
+public class Sphere extends Figure implements Volume {
 
     public Sphere(int a) {
         super(a, 0);
@@ -16,5 +16,10 @@ public class Sphere extends Figure {
     @Override
     public Double getPerimeter() {
         return null;
+    }
+
+    @Override
+    public Double getVolume() {
+        return (double) (4 / 3) * Math.PI * (a * a * a);
     }
 }

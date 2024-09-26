@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ThreeDimensionalShapes</artifactId>
-    <version>1.0.0-SNAPESHOT</version>
+    <version>1.1.0-SNAPESHOT</version>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>

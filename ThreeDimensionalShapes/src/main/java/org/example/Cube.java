@@ -2,7 +2,7 @@ package org.example;
 
 import org.example.figure.Figure;
 
-public class Cube extends Figure {
+public class Cube extends Figure implements Volume {
 
     public Cube(int a) {
         super(a, a);
@@ -15,6 +15,11 @@ public class Cube extends Figure {
 
     @Override
     public Double getPerimeter() {
-        return (double)6 * a * a;
+        return (double) 6 * a * a;
+    }
+
+    @Override
+    public Double getVolume() {
+        return (double) a * a * a;
     }
 }
