@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>Geometry-Library</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>

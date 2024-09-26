@@ -1,5 +1,8 @@
 package org.example.figure;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Circle extends Figure {
 
     public Circle(int a) {
@@ -8,11 +11,13 @@ public class Circle extends Figure {
 
     @Override
     public Double getSquare() {
-        return Math.PI * (a * a);
+        BigDecimal result = new BigDecimal(Math.PI * (a * a));
+        return result.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 
     @Override
     public Double getPerimeter() {
-        return 2 * Math.PI * a;
+        BigDecimal result = new BigDecimal(2 * Math.PI * a);
+        return result.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 }

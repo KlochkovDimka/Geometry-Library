@@ -1,5 +1,8 @@
 package org.example.figure;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Triangle extends Figure {
 
     protected int c;
@@ -12,7 +15,9 @@ public class Triangle extends Figure {
     @Override
     public Double getSquare() {
         double p = getPerimeter() / 2;
-        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        p = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        BigDecimal result = new BigDecimal(p);
+        return result.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 
     @Override
